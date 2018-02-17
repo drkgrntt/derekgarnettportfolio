@@ -7,7 +7,7 @@ const ArtGallery = () => {
         <h1 className="title">Art Gallery</h1>
         <div className="row">
           <div className="column">
-            <p>Art Gallery is just that; an art gallery for my wife's art club at the school she teaches at. It allows users to go to the gallery, login with google for commenting, and expand different galleries and individual pieces of art. The operator (my wife, in this case) has admin access to be able to upload, post, edit, and delete parent-level galleries and child-level pieces of artwork and their info. User features include being able to comment on pictures and edit or delete those comments.</p>
+            <p>Art Gallery is just that; an art gallery for an elementary school Art Club. It allows users (parents and students) to go to the gallery, login with google for commenting, and expand different galleries and individual pieces of art. The operator has admin access to be able to upload, post, edit, and delete parent-level galleries and child-level pieces of artwork and their info. User features include being able to comment on pictures and edit or delete those comments.</p>
             <h3 className="title">Technology:</h3>
             <p>Art Gallery is a React/Redux app that uses Materialize CSS for its styling. On the backend, an Express/Node JS app runs from Heroku, uses Google Oauth for authentication, and stores information into a Mongo database. Images are uploaded to Cloudinary with the help of Multer.</p>
           </div>

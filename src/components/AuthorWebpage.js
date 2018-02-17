@@ -7,7 +7,7 @@ const AuthorWebpage = () => {
         <h1 className="title">Author Webpage</h1>
         <div className="row">
           <div className="column">
-            <p>This webpage is a place for my brother's writing. He recently wrote and published a book about a six-month teaching job in Honduras that he did several years ago. He also likes to write short stories and publish them to Facebook, so I created this website to show off his new book, <i>From Scattered Ashes</i>, and to publish and maintain his other writings. Right now, the website is still a work in progress.</p>
+            <p>This is an author website. On the main landing page, you can preview the first chapter of the author's book, read short stories published by the author, and even contact him about his stories or writing work. The author has admin access to be able to create, edit, and delete short stories and chapters for longer stories, as well as being able to choose which story is the feature story for the front page.</p>
             <h3 className="title">Technology:</h3>
             <p>This author webpage is a React app that uses Redux to manage state. It uses Materialize CSS, along with a fair amount of custom styling. Firebase is the real brains of this backend. Firebase handles all of the database management and even hosts the website.</p>
           </div>

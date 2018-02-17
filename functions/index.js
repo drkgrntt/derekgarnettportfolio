@@ -14,7 +14,7 @@ functions.database.ref('/messages/{uri}').onCreate(event => {
   let mailOptions = {
     to: 'drkgrntt@gmail.com',
     subject: 'New Work Inquiry',
-    html: `<p>From: ${message.name}, ${message.email}</p><p>${message.content}</p>`
+    html: `<p>From: ${message.name}</p><p>Email: ${message.email}</p><p>${message.content}</p>`
   };
 
   return transporter.sendMail(mailOptions).then(() => {
