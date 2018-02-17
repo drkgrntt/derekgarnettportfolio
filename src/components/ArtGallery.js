@@ -5,9 +5,16 @@ const ArtGallery = () => {
     <div className="app white">
       <div className="container">
         <h1 className="title">Art Gallery</h1>
-        <p>Art Gallery is just that; an art gallery for my wife's art club at the school she teaches at. It allows users to go to the gallery, login with google for commenting, and expand different galleries and individual pieces of art. The operator (my wife, in this case) has admin access to be able to upload, post, edit, and delete parent-level galleries and child-level pieces of artwork and their info. User features include being able to comment on pictures and edit or delete those comments.</p>
-        <h3 className="title">Technology:</h3>
-        <p>Art Gallery is a React/Redux app that uses Materialize CSS for its styling. On the backend, an Express/Node JS app runs from Heroku, uses Google Oauth for authentication, and stores information into a Mongo database. Images are uploaded to Cloudinary with the help of Multer.</p>
+        <div className="row">
+          <div className="column">
+            <p>Art Gallery is just that; an art gallery for my wife's art club at the school she teaches at. It allows users to go to the gallery, login with google for commenting, and expand different galleries and individual pieces of art. The operator (my wife, in this case) has admin access to be able to upload, post, edit, and delete parent-level galleries and child-level pieces of artwork and their info. User features include being able to comment on pictures and edit or delete those comments.</p>
+            <h3 className="title">Technology:</h3>
+            <p>Art Gallery is a React/Redux app that uses Materialize CSS for its styling. On the backend, an Express/Node JS app runs from Heroku, uses Google Oauth for authentication, and stores information into a Mongo database. Images are uploaded to Cloudinary with the help of Multer.</p>
+          </div>
+          <div className="column">
+            <img className="display" src="https://i.imgur.com/TKhAgad.png?1" />
+          </div>
+        </div>
         <img className="use smaller" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png" />
         <img className="use" src="https://blog.phusion.nl/content/images/2016/07/Heroku.png" />
         <img className="use" src="http://blog-assets.risingstack.com/2016/Jan/react_best_practices-1453211146748.png" />
