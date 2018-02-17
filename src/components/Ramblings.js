@@ -12,7 +12,7 @@ const Ramblings = () => {
             <p>Ramblings uses Semantic UI for its layout. On the backend, an Express/Node JS app runs from Heroku, includes authentication and nested routes for user interaction, and stores everything into a Mongo database.</p>
           </div>
           <div className="column">
-            <img className="display" src="https://i.imgur.com/HnomVdf.png?1" />
+            <img className="display" src="https://i.imgur.com/HnomVdf.png?2" />
           </div>
         </div>
         <img className="use smaller" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png" />
