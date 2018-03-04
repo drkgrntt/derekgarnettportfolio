@@ -4,6 +4,12 @@ body {
   background-color: rgb(240, 240, 240);
 }
 
+p {
+  letter-spacing: .5px;
+  line-height: 20px;
+  word-spacing: 3px;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1280px;
@@ -77,6 +83,10 @@ a {
   padding: 7px 50px;
   font-size: 13px;
   border-radius: 8px;
+}
+
+.button:hover {
+  cursor: pointer;
 }
 
 .title {

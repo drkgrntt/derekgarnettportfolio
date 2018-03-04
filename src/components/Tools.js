@@ -2,7 +2,7 @@ import React from 'react';
 
 const Tools = () => {
   return (
-    <div className="app grey">
+    <div className="app white">
       <div className="container">
         <h1 className="title center">Tools I Use:</h1>
         <div className="tools">

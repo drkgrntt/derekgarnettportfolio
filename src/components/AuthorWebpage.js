@@ -9,7 +9,7 @@ const AuthorWebpage = () => {
           <div className="column">
             <p>This is an author website. On the main landing page, you can preview the first chapter of the author's book, read short stories published by the author, and even contact him about his stories or writing work. The author has admin access to be able to create, edit, and delete short stories and chapters for longer stories, as well as being able to choose which story is the feature story for the front page.</p>
             <h3 className="title">Technology:</h3>
-            <p>This author webpage is a React app that uses Redux to manage state. It uses Materialize CSS, along with a fair amount of custom styling. Firebase is the real brains of this backend. Firebase handles all of the database management and even hosts the website.</p>
+            <p>This author webpage is a React app that uses Redux to manage state. It uses Materialize CSS, along with a fair amount of custom styling. Firebase is the real brains of this backend. Firebase handles all of the database management, hosts the website, and uses Firebase functions to handle server-side funcitons.</p>
           </div>
           <div className="column">
             <img className="display" src="https://i.imgur.com/rMUUXyC.png?1" />

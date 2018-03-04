@@ -11,3 +11,15 @@ export const saveMessage = ({ name, email, content }) => {
       });
   };
 };
+
+export const saveReview = ({ name, website, content }, history) => {
+  return (dispatch) => {
+    alert('Thank you for your review!');
+    history.push('/');
+    firebase.database().ref('/reviews')
+      .push({ name, website, content })
+      .then(() => {
+        dispatch({ type: 'save_review' });
+      });
+  };
+};

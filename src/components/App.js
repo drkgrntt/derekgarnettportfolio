@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import firebase from 'firebase';
+import { BrowserRouter, Route } from 'react-router-dom';
 import Header from './Header';
-import ArtGallery from './ArtGallery';
-import AuthorWebpage from './AuthorWebpage';
-import Ramblings from './Ramblings';
-import Tools from './Tools';
-import Contact from './Contact';
+import Portfolio from './Portfolio';
+import Review from './Review';
 
 class App extends Component {
   componentWillMount() {
@@ -24,14 +22,13 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <Header />
-        <ArtGallery />
-        <AuthorWebpage />
-        <Ramblings />
-        <Tools />
-        <Contact />
-      </div>
+      <BrowserRouter>
+        <div>
+          <Header />
+          <Route exact path="/" component={Portfolio} />
+          <Route exact path="/review" component={Review} />
+        </div>
+      </BrowserRouter>
     );
   }
 }
