@@ -4,6 +4,8 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import Header from './Header';
 import Portfolio from './Portfolio';
 import Review from './Review';
+import Journal from './Journal';
+import ShowJournal from './ShowJournal';
 
 class App extends Component {
   componentWillMount() {
@@ -27,6 +29,9 @@ class App extends Component {
           <Header />
           <Route exact path="/" component={Portfolio} />
           <Route exact path="/review" component={Review} />
+
+          <Route exact path="/journal" component={Journal} />
+          <Route exact path="/journal/:uid" component={ShowJournal} />
         </div>
       </BrowserRouter>
     );

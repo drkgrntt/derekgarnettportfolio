@@ -85,6 +85,10 @@ a {
   border-radius: 8px;
 }
 
+.button:focus {
+  outline: none;
+}
+
 .button:hover {
   cursor: pointer;
 }
@@ -139,10 +143,18 @@ a {
   padding: 0 15px;
 }
 
+.text-input:focus {
+  outline: none;
+}
+
 .text-area-input {
   width: 90%;
   border-radius: 10px;
   padding: 15px;
+}
+
+.text-area-input:focus {
+  outline: none;
 }
 
 @media only screen and (min-width: 601px) {
@@ -174,4 +186,31 @@ a {
 .display:hover {
   -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
+}
+
+.margin {
+  margin-bottom: 30px;
+}
+
+.journal-form {
+  width: 100%;
+}
+
+.index-journals {
+  width: 90%;
+  padding: 1px 20px;
+  border-radius: 10px;
+}
+
+@media only screen and (min-width: 993px) {
+  .journal-form {
+    width: 50%;
+    display: inline-block;
+    float: right;
+  }
+
+  .index-journals {
+    width: 45%;
+    display: inline-block;
+  }
 }

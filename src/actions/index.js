@@ -1,5 +1,10 @@
 import firebase from 'firebase';
 import { reset } from 'redux-form';
+import {
+  SAVE_REVIEW
+} from './types';
+
+export * from './JournalActions';
 
 export const saveMessage = ({ name, email, content }) => {
   return (dispatch) => {
@@ -19,7 +24,7 @@ export const saveReview = ({ name, website, content }, history) => {
     firebase.database().ref('/reviews')
       .push({ name, website, content })
       .then(() => {
-        dispatch({ type: 'save_review' });
+        dispatch({ type: SAVE_REVIEW });
       });
   };
 };

@@ -12,7 +12,7 @@ const EditingBadger = () => {
             <p>This React/Redux website pairs with Firebase for hosting and database management. All customer reviews, blog posts, and even products are managed with Firebase's database. All styling is handled with the Semantic UI library paired with custom CSS.</p>
           </div>
           <div className="column">
-            <img className="display" src="https://i.imgur.com/SnGTyxr.png?1" />
+            <img className="display" src="https://i.imgur.com/zr9CI6B.png?1" />
           </div>
         </div>
         <img className="use smaller" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png" />
