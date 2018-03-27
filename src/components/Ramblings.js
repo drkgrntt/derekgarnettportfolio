@@ -12,14 +12,14 @@ const Ramblings = () => {
             <p>Ramblings uses Semantic UI for its layout. On the backend, an Express/Node JS app runs from Heroku, includes authentication and nested routes for user interaction, and stores everything into a Mongo database.</p>
           </div>
           <div className="column">
-            <img className="display" src="https://i.imgur.com/HnomVdf.png?2" />
+            <img alt="Ramblings Home Page" className="display" src="https://i.imgur.com/HnomVdf.png?2" />
           </div>
         </div>
-        <img className="use smaller" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png" />
-        <img className="use" src="https://blog.phusion.nl/content/images/2016/07/Heroku.png" />
-        <img className="use smaller" src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2016/04/1461315888semantic.png" />
-        <img className="use" src="http://www.vikaskbh.com/wp-content/uploads/2014/01/jquery_logo.png" />
-        <img className="use" src="https://webassets.mongodb.com/_com_assets/cms/MongoDB-Logo-5c3a7405a85675366beb3a5ec4c032348c390b3f142f5e6dddf1d78e2df5cb5c.png" />
+        <img alt="Node logo" className="use smaller" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png" />
+        <img alt="Heroku logo" className="use" src="https://blog.phusion.nl/content/images/2016/07/Heroku.png" />
+        <img alt="Semantic UI Logo" className="use smaller" src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2016/04/1461315888semantic.png" />
+        <img alt="jQuery logo" className="use" src="http://www.vikaskbh.com/wp-content/uploads/2014/01/jquery_logo.png" />
+        <img alt="Mongo DB logo" className="use" src="https://webassets.mongodb.com/_com_assets/cms/MongoDB-Logo-5c3a7405a85675366beb3a5ec4c032348c390b3f142f5e6dddf1d78e2df5cb5c.png" />
         <br /><br />
         <a className="button" href="https://ramblings.herokuapp.com">Visit the Blog</a>
       </div>

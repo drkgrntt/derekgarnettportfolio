@@ -6,6 +6,7 @@ const Header = () => {
       <div className="container">
         <h1 className="header">Derek Garnett</h1>
         <img 
+          alt="Portrait of Derek"
           className="header" 
           src="https://odesk-prod-portraits.s3.amazonaws.com/Users:drkgrntt:PortraitUrl_100?AWSAccessKeyId=AKIAIKIUKM3HBSWUGCNQ&Expires=2147483647&Signature=qAEptJhP55TQc9Ak6TqpDgAApYQ%3D&DPEwB" 
         />

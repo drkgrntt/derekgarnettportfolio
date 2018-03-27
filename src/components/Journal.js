@@ -16,8 +16,8 @@ class Journal extends Component {
       <div>
         <h1>Journal</h1>
         <hr />
-        <IndexJournals />
         <JournalForm />
+        <IndexJournals />
       </div>
     );
   }

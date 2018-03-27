@@ -13,7 +13,7 @@ class JournalForm extends Component {
       return updateJournalEntry(values, uid, history);
     }
 
-    return saveJournalEntry(values);
+    return saveJournalEntry(values, history);
   }
 
   renderField(field) {

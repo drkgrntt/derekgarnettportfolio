@@ -7,7 +7,7 @@ import {
   CHECK_ACCESS_FIELD
 } from './types';
 
-export const saveJournalEntry = ({ title, content }) => {
+export const saveJournalEntry = ({ title, content }, history) => {
   return (dispatch) => {
     const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     const date = new Date();
@@ -15,8 +15,8 @@ export const saveJournalEntry = ({ title, content }) => {
 
     firebase.database().ref('/journals')
       .push({ title, content, created })
-      .then(() => {
-        dispatch(reset('JournalForm'));
+      .then((journal) => {
+        history.push(`/journal/${journal.path.pieces_[1]}`);
       });    
   };
 };

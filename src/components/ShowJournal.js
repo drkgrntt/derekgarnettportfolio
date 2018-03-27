@@ -18,6 +18,10 @@ class ShowJournal extends Component {
     deleteJournalEntry(uid, history);
   }
 
+  onBackClick() {
+    this.props.unfetchJournalEntry();
+  }
+
   renderAuthButtons() {
     if (this.props.access === 'authenticated') {
       return (
@@ -25,7 +29,7 @@ class ShowJournal extends Component {
           <Link to="/journal">
             <button 
               className="button"
-              onClick={unfetchJournalEntry}
+              onClick={this.onBackClick.bind(this)}
             >
               Back
             </button>
@@ -44,9 +48,9 @@ class ShowJournal extends Component {
   }
 
   renderContent() {
-    const { journal, uid, unfetchJournalEntry } = this.props;
+    const { journal } = this.props;
 
-    if (journal === undefined) {
+    if (journal === undefined || journal === null) {
       return <h1>Loading . . .</h1>;
     }
 
