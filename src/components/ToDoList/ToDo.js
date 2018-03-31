@@ -24,19 +24,20 @@ class ToDo extends Component {
     this.setState({ text: event.target.value });
   }
 
-  handleSubmitNew(text) {
+  handleSubmitNew(text, event) {
     firebase.database().ref('/todos')
       .push({ text , complete: false })
       .then(() => {
+        event.preventDefault();
         this.setState({ text: '' });
       });
   }
 
-  handleSubmitEdited(uid, text) {
-    console.log(uid, text);
+  handleSubmitEdited(uid, text, event) {
     firebase.database().ref(`/todos/${uid}`)
       .update({ text, complete: false })
       .then(() => {
+        event.preventDefault();
         this.setState({ text: '', uid: '' });
       });
   }
@@ -60,8 +61,13 @@ class ToDo extends Component {
   }
 
   handleSubmit(uid, text) {
-    const SubmitNew = () => this.handleSubmitNew(text);
-    const SubmitEdited = () => this.handleSubmitEdited(uid, text);
+    const SubmitNew = event => {
+      this.handleSubmitNew(text, event);
+    }
+
+    const SubmitEdited = event => {
+      this.handleSubmitEdited(uid, text, event);
+    }
 
     if (uid === '') {
       return SubmitNew();
