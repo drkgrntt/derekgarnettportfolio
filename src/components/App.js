@@ -6,6 +6,7 @@ import Portfolio from './Portfolio';
 import Review from './Review';
 import Journal from './Journal';
 import ShowJournal from './ShowJournal';
+import ToDo from './ToDoList/ToDo';
 
 class App extends Component {
   componentWillMount() {
@@ -29,7 +30,7 @@ class App extends Component {
           <Header />
           <Route exact path="/" component={Portfolio} />
           <Route exact path="/review" component={Review} />
-
+          <Route exact path="/todo" component={ToDo} />
           <Route exact path="/journal" component={Journal} />
           <Route exact path="/journal/:uid" component={ShowJournal} />
         </div>

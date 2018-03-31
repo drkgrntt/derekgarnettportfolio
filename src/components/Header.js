@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
     <div id="header">
       <div className="container">
-        <h1 className="header">Derek Garnett</h1>
+        <Link to="/"><h1 className="header">Derek Garnett</h1></Link>
         <img 
           alt="Portrait of Derek"
           className="header" 

@@ -16,8 +16,18 @@ p {
   width: 90%;
 }
 
+.small-container {
+  margin: 0 auto;
+  max-width: 500px;
+  width: 90%;
+}
+
 @media only screen and (min-width: 601px) {
   .container {
+    width: 80%;
+  }
+
+  .small-container {
     width: 80%;
   }
 
@@ -213,4 +223,56 @@ a {
     width: 45%;
     display: inline-block;
   }
+}
+
+.todo {
+  margin: 30px;
+  background: #20002c;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #cbb4d4, #500050);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #cbb4d4, #500050); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border: solid 1px black;
+  border-radius: 5px;
+}
+
+.todo-space {
+  border-bottom: solid 1px black;
+}
+
+.todo-title {
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+.list-input {
+  width: 99%;
+  height: 30px;
+  font-size: 25px;
+}
+
+.list-button {
+  color: white;
+  background-color: rgb(80, 0, 80);
+  padding: 7px 50px;
+  margin: 10px;
+  font-size: 13px;
+  border-radius: 8px;
+  width: 95%;
+}
+
+.todo-item {
+  margin: 5px;
+  margin-left: 15px;
+  font-weight: bold;
+}
+
+.todo-right {
+  float: right;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.complete {
+  color: rgb(100,100,100);
+  text-decoration: line-through;
 }
