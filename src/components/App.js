@@ -7,6 +7,7 @@ import Review from './Review';
 import Journal from './Journal';
 import ShowJournal from './ShowJournal';
 import ToDo from './ToDoList/ToDo';
+import Playground from './Playground';
 
 class App extends Component {
   componentWillMount() {
@@ -33,6 +34,7 @@ class App extends Component {
           <Route exact path="/todo" component={ToDo} />
           <Route exact path="/journal" component={Journal} />
           <Route exact path="/journal/:uid" component={ShowJournal} />
+          <Route exact path="/playground" component={Playground} />
         </div>
       </BrowserRouter>
     );
