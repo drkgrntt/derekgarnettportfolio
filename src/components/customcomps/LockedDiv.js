@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
 class LockedDiv extends Component {
-  // Props are accessCode (string), locked (boolean), and className (string)
+  // Props are accessCode (string), unlocked (boolean), and className (string)
   constructor(props) {
     super(props);
 
     this.state = {
       accessCode: this.props.accessCode, 
-      locked: this.props.locked, 
+      unlocked: this.props.unlocked, 
       text: ''
     };
   }
@@ -17,11 +17,11 @@ class LockedDiv extends Component {
     const { text, accessCode } = this.state;
 
     if (text === accessCode) {
-      return this.setState({ locked: false });
+      return this.setState({ unlocked: true });
     }
   }
 
-  // if locked, render form
+  // if not unlocked, render form (default)
   renderAccessForm() {
     return (
       <div style={{ textAlign: 'center' }}>
@@ -58,13 +58,13 @@ class LockedDiv extends Component {
     );
   }
 
-  // if unlocked, return a div
+  // if unlocked, return children
   renderContent() {
-    if (this.state.locked) {
-      return this.renderAccessForm();
+    if (this.state.unlocked) {
+      return this.props.children;
     }
 
-    return <div>{this.props.children}</div>;
+    return this.renderAccessForm();
   }
 
   render() {
