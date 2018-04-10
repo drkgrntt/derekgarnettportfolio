@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 
 class LockedDiv extends Component {
-  // Props are accessCode and className
+  // Props are accessCode (string), locked (boolean), and className (string)
   constructor(props) {
     super(props);
 
-    this.state = { accessCode: this.props.accessCode, locked: true, text: '' };
+    this.state = {
+      accessCode: this.props.accessCode, 
+      locked: this.props.locked, 
+      text: ''
+    };
   }
 
   // check access code

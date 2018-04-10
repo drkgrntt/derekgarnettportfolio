@@ -5,7 +5,7 @@ import Flexbox from './Flexbox';
 
 const Playground = () => {
   return (
-    <LockedDiv className="container" accessCode="password">
+    <LockedDiv className="container" accessCode="password" locked>
       <h2>Playground</h2>
       <hr />
       <Flexbox />
