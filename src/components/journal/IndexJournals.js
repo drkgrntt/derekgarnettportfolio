@@ -3,7 +3,7 @@ import _ from 'lodash';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import renderHTML from 'react-render-html';
-import { fetchJournalEntries } from '../actions';
+import { fetchJournalEntries } from '../../actions';
 
 class IndexJournals extends Component {
   componentDidMount() {

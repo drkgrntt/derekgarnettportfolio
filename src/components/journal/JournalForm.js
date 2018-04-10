@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { reduxForm, Field } from 'redux-form';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
-import TextEditor from './TextEditor';
-import { saveJournalEntry, updateJournalEntry } from '../actions';
+import TextEditor from '../TextEditor';
+import { saveJournalEntry, updateJournalEntry } from '../../actions';
 
 class JournalForm extends Component {
   onSubmit(values) {

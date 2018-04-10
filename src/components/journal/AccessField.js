@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { reduxForm, Field } from 'redux-form';
 import { connect } from 'react-redux';
-import { checkAccessField } from '../actions';
+import { checkAccessField } from '../../actions';
 
 class AccessField extends Component {
   onSubmit(value) {

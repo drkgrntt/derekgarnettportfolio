@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { Link, withRouter } from 'react-router-dom';
 import renderHTML from 'react-render-html';
 import AccessField from './AccessField';
-import { unfetchJournalEntry, fetchJournalEntry, deleteJournalEntry } from '../actions';
+import { unfetchJournalEntry, fetchJournalEntry, deleteJournalEntry } from '../../actions';
 
 class ShowJournal extends Component {
   componentDidMount() {

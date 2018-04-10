@@ -1,10 +1,8 @@
 import React from 'react';
 
-const Playground = () => {
+const Flexbox = () => {
   return (
-    <div className="container">
-      <h2>Playground</h2>
-      <hr />
+    <div>
       <h3><a style={{ color: 'blue' }} href="https://www.youtube.com/watch?v=JJSoEo8JSnc">Flexbox</a></h3>
 
       {/* Flex Set 1 */}
@@ -70,4 +68,4 @@ const Playground = () => {
   );
 }
 
-export default Playground;
+export default Flexbox;

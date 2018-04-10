@@ -4,10 +4,10 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import Header from './Header';
 import Portfolio from './Portfolio';
 import Review from './Review';
-import Journal from './Journal';
-import ShowJournal from './ShowJournal';
+import Journal from './journal/Journal';
+import ShowJournal from './journal/ShowJournal';
 import ToDo from './ToDoList/ToDo';
-import Playground from './Playground';
+import Playground from './playground/Playground';
 
 class App extends Component {
   componentWillMount() {
