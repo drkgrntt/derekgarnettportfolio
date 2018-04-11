@@ -3,19 +3,18 @@ import React from 'react';
 const ToDoForm = (props) => {
   return (
     <div className="todo-space">
-      <form>
+      <form onSubmit={props.onSubmit}>
         <input
           value={props.text}
           onChange={props.onChange}
           type="text"
           className="list-input"
         />
-        <input
-          value="Add"
-          type="submit"
+        <button
           className="list-button"
-          onClick={props.onSubmit}
-        />
+        >
+          Add Item
+        </button>
       </form>
     </div>
   );

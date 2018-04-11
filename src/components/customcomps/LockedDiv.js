@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 
 class LockedDiv extends Component {
-  // Props are accessCode (string), unlocked (boolean), and className (string)
+  // Props are:
+  // accessCode (string), unlocked (boolean), title (string),
+  // buttonColor, buttonTextColor (strings), 
+  // style, titleStyle, buttonStyle, inputStyle (objects), 
+  // className, inputClass, buttonClass, titleClass (strings)
   constructor(props) {
     super(props);
 
     this.state = {
-      accessCode: this.props.accessCode, 
       unlocked: this.props.unlocked, 
       text: ''
     };
@@ -14,9 +17,7 @@ class LockedDiv extends Component {
 
   // check access code
   handleSubmit() {
-    const { text, accessCode } = this.state;
-
-    if (text === accessCode) {
+    if (this.state.text === this.props.accessCode) {
       return this.setState({ unlocked: true });
     }
   }
@@ -26,30 +27,35 @@ class LockedDiv extends Component {
     return (
       <div style={{ textAlign: 'center' }}>
         <form>
-          <h2>Access Code</h2>
+          <h2 
+            style={this.props.titleStyle}
+            className={this.props.titleClass}
+          >{this.props.title || "Access Code"}</h2>
           <input
             value={this.state.text}
             onChange={event => this.setState({ text: event.target.value })}
             type="password"
-            style={{
+            style={this.props.inputStyle || {
               width: '300px',
               height: '30px',
               borderRadius: '5px',
               padding: '0 15px',
               marginBottom: '20px'
             }}
+            className={this.props.inputClass}
           />
           <br />
           <button
             type="submit"
-            style={{
-              color: 'white',
-              backgroundColor: 'rgb(80,0,80)',
+            style={this.props.buttonStyle || {
+              color: this.props.buttonTextColor,
+              backgroundColor: this.props.buttonColor,
               padding: '7px 50px',
               fontSize: '13px',
               borderRadius: '8px'
             }}
             onClick={() => this.handleSubmit()}
+            className={this.props.buttonClass}
           >
             Submit
           </button>
@@ -69,7 +75,7 @@ class LockedDiv extends Component {
 
   render() {
     return (
-      <div className={this.props.className}>
+      <div className={this.props.className} style={this.props.style}>
         {this.renderContent()}
       </div>
     );

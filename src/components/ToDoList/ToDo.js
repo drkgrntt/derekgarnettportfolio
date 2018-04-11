@@ -25,19 +25,22 @@ class ToDo extends Component {
   }
 
   handleSubmitNew(text, event) {
+    console.log(event);
+    event.preventDefault();
+    event.stopPropagation();
     firebase.database().ref('/todos')
       .push({ text , complete: false })
       .then(() => {
-        event.preventDefault();
         this.setState({ text: '' });
       });
   }
 
   handleSubmitEdited(uid, text, event) {
+    event.preventDefault();
+    event.stopPropagation();
     firebase.database().ref(`/todos/${uid}`)
       .update({ text, complete: false })
       .then(() => {
-        event.preventDefault();
         this.setState({ text: '', uid: '' });
       });
   }
@@ -60,12 +63,12 @@ class ToDo extends Component {
     });
   }
 
-  handleSubmit(uid, text) {
-    const SubmitNew = event => {
+  handleSubmit(uid, text, event) {
+    const SubmitNew = () => {
       this.handleSubmitNew(text, event);
     }
 
-    const SubmitEdited = event => {
+    const SubmitEdited = () => {
       this.handleSubmitEdited(uid, text, event);
     }
 
@@ -91,7 +94,7 @@ class ToDo extends Component {
           <ToDoForm 
             text={text} 
             onChange={event => this.handleInputChange(event)}
-            onSubmit={this.handleSubmit.bind(this, uid, text)}
+            onSubmit={event => this.handleSubmit(uid, text, event)}
           />
           {this.renderList()}
         </div>
