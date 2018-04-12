@@ -50,19 +50,6 @@ class ToDo extends Component {
     this.setState({ uid, text });
   }
 
-  renderList() {
-    return _.map(this.state.todos, (todo, uid) => {
-      return (
-        <ToDoListItem
-          key={uid}
-          todo={todo}
-          uid={uid}
-          onEditClick={this.handleEditClick.bind(this, uid, todo.text)}
-        />
-      );
-    });
-  }
-
   handleSubmit(uid, text, event) {
     const SubmitNew = () => {
       this.handleSubmitNew(text, event);
@@ -77,6 +64,19 @@ class ToDo extends Component {
     }
 
     return SubmitEdited();
+  }
+
+  renderList() {
+    return _.map(this.state.todos, (todo, uid) => {
+      return (
+        <ToDoListItem
+          key={uid}
+          todo={todo}
+          uid={uid}
+          onEditClick={this.handleEditClick.bind(this, uid, todo.text)}
+        />
+      );
+    });
   }
 
   // Render
