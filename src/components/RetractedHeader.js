@@ -12,7 +12,7 @@ const RetractedHeader = (props) => {
           onClick={props.onClick} 
           style={{ float: 'right', cursor: 'pointer' }}
         >
-          Expand Header
+          Expand
         </a>
       </div>
     </div>

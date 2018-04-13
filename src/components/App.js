@@ -29,12 +29,14 @@ class App extends Component {
       <BrowserRouter>
         <div>
           <Header />
-          <Route exact path="/" component={Portfolio} />
-          <Route exact path="/review" component={Review} />
-          <Route exact path="/todo" component={ToDo} />
-          <Route exact path="/journal" component={Journal} />
-          <Route exact path="/journal/:uid" component={ShowJournal} />
-          <Route exact path="/playground" component={Playground} />
+          <div style={{ paddingTop: 250 }}>
+            <Route exact path="/" component={Portfolio} />
+            <Route exact path="/review" component={Review} />
+            <Route exact path="/todo" component={ToDo} />
+            <Route exact path="/journal" component={Journal} />
+            <Route exact path="/journal/:uid" component={ShowJournal} />
+            <Route exact path="/playground" component={Playground} />
+          </div>
         </div>
       </BrowserRouter>
     );

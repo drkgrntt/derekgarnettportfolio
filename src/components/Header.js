@@ -9,11 +9,21 @@ class Header extends Component {
     this.state = { retracted: false };
   }
 
+  componentDidMount() {
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset < 50) {
+        return this.setState({ retracted: false });
+      }
+
+      return this.setState({ retracted: true });
+    });
+  }
+
   changeHeader() {
     this.setState(state => ({ retracted: state.retracted ? false : true }));
   }
 
-  render() {
+  renderContent() {
     if (this.state.retracted) {
       return <RetractedHeader onClick={() => this.changeHeader()} />;
     }
@@ -21,12 +31,6 @@ class Header extends Component {
     return (
       <div className="head">
         <div style={{ position: 'relative' }} className="container">
-          <a 
-            style={{ right: '0', position: 'absolute', cursor: 'pointer' }} 
-            onClick={() => this.changeHeader()}
-          >
-            Contract Header
-          </a>
           <Link to="/"><h1 className="header">Derek Garnett</h1></Link>
           <img 
             alt="Portrait of Derek"
@@ -39,6 +43,12 @@ class Header extends Component {
           </div>
         </div>
       </div>
+    );
+  }
+
+  render() {
+    return (
+      this.renderContent()
     );    
   }
 }
