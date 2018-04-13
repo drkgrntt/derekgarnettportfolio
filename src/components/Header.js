@@ -39,7 +39,10 @@ class Header extends Component {
           />
           <div className="center">
             <p className="header webdev">Full Stack JavaScript Developer</p>
-            <p className="header contact"><a href="mailto:drkgrntt@gmail.com">drkgrntt@gmail.com</a> || <a href="https://github.com/drkgrntt">GitHub</a></p>
+            <p className="header contact">
+              <a href="mailto:drkgrntt@gmail.com">drkgrntt@gmail.com</a> || <span />
+              <a href="https://github.com/drkgrntt">GitHub</a>
+            </p>
           </div>
         </div>
       </div>

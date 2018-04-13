@@ -21,7 +21,9 @@ const Ramblings = () => {
         <img alt="jQuery logo" className="use" src="http://www.vikaskbh.com/wp-content/uploads/2014/01/jquery_logo.png" />
         <img alt="Mongo DB logo" className="use" src="https://webassets.mongodb.com/_com_assets/cms/MongoDB-Logo-5c3a7405a85675366beb3a5ec4c032348c390b3f142f5e6dddf1d78e2df5cb5c.png" />
         <br /><br />
-        <a className="button" href="https://ramblings.herokuapp.com">Visit the Blog</a>
+        <a href="https://ramblings.herokuapp.com">
+          <button className="button">Visit the Blog</button>
+        </a>
       </div>
     </div>
   );

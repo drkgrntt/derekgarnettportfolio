@@ -187,7 +187,7 @@ a {
 }
 
 .display {
-  max-width: 100%;
+  max-width: 90%;
   max-height: 400px;
   display: block;
   margin: 0 auto;
@@ -265,6 +265,10 @@ a {
   font-size: 13px;
   border-radius: 8px;
   width: 95%;
+}
+
+.list-button:hover {
+  cursor: pointer;
 }
 
 .todo-item {

@@ -21,7 +21,9 @@ const AuthorWebpage = () => {
         <img alt="Firebase logo" className="use" src="https://1.bp.blogspot.com/-YIfQT6q8ZM4/Vzyq5z1B8HI/AAAAAAAAAAc/UmWSSMLKtKgtH7CACElUp12zXkrPK5UoACLcB/s1600/image00.png" />
         <img alt="Matierialize CSS logo" className="use" src="https://s-media-cache-ak0.pinimg.com/originals/11/32/de/1132de743af11b94448b08e4e69e7bdf.jpg" />
         <br /><br />
-        <a className="button" href="https://markgarnettauthor.firebaseapp.com">Check it Out</a>
+        <a href="https://markgarnettauthor.firebaseapp.com">
+          <button className="button">Check it Out</button>
+        </a>
         <br /><br />
       </div>
     </div>

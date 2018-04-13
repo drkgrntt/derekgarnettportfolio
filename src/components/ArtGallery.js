@@ -22,7 +22,9 @@ const ArtGallery = () => {
         <img alt="Mongo DB logo" className="use" src="https://webassets.mongodb.com/_com_assets/cms/MongoDB-Logo-5c3a7405a85675366beb3a5ec4c032348c390b3f142f5e6dddf1d78e2df5cb5c.png" />
         <img alt="Materialize CSS logo" className="use" src="https://s-media-cache-ak0.pinimg.com/originals/11/32/de/1132de743af11b94448b08e4e69e7bdf.jpg" />
         <br /><br />
-        <a className="button" href="https://luffartclub.herokuapp.com">Browse the Gallery</a>
+        <a href="https://luffartclub.herokuapp.com">
+          <button className="button">Browse the Gallery</button>
+        </a>
       </div>
     </div>
   );

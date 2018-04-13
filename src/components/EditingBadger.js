@@ -21,7 +21,9 @@ const EditingBadger = () => {
         <img alt="Firebase" className="use" src="https://1.bp.blogspot.com/-YIfQT6q8ZM4/Vzyq5z1B8HI/AAAAAAAAAAc/UmWSSMLKtKgtH7CACElUp12zXkrPK5UoACLcB/s1600/image00.png" />
         <img alt="Semantic UI logo" className="use smaller" src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2016/04/1461315888semantic.png" />
         <br /><br />
-        <a className="button" href="https://editingbadger.com">Check it Out</a>
+        <a href="https://editingbadger.com">
+          <button className="button">Check it Out</button>
+        </a>
       </div>
     </div>
   );

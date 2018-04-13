@@ -20,9 +20,13 @@ const OnPar = () => {
         <img alt="React native logo" className="use" src="https://cdn-images-1.medium.com/max/1371/1*safAvjgR68qpQCreDTOcYA.png" style={{ marginRight: '10px' }}/>
         <img alt="Expo logo" className="use" src="https://cdn-images-1.medium.com/max/1920/1*EKXYhntirnqHjXdTGmLXyw.png" />
         <br /><br />
-        <a className="button" href="https://exp-shell-app-assets.s3-us-west-1.amazonaws.com/android%2F%40drkgrntt%2FOnPar-b58a273b-3937-11e8-81f9-0a580a7823af-signed.apk">Download the .apk</a>
+        <a href="https://exp-shell-app-assets.s3-us-west-1.amazonaws.com/android%2F%40drkgrntt%2FOnPar-b58a273b-3937-11e8-81f9-0a580a7823af-signed.apk">
+          <button className="button">Download the .apk</button>
+        </a>
         <br /><br />
-        <a className="button" href="https://github.com/drkgrntt/OnPar">View the source code</a>
+        <a href="https://github.com/drkgrntt/OnPar">
+          <button className="button">View the source code</button>
+        </a>
         <br /><br />
       </div>
     </div>
