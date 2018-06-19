@@ -27,7 +27,7 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <div>
+        <div className="router">
           <Header />
           <div style={{ paddingTop: 250 }}>
             <Route exact path="/" component={Portfolio} />

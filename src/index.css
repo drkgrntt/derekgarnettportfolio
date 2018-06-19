@@ -126,11 +126,19 @@ a {
 .use {
   width: 100px;
   height: auto;
+  margin-right: 10px;
 }
 
 .use.smaller {
   width: 70px;
   height: auto;
+  margin-right: 10px;
+}
+
+.use.bigger {
+  width: 130px;
+  height: auto;
+  margin-right: 10px;
 }
 
 .center {

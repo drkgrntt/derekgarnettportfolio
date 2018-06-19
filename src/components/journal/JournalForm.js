@@ -31,7 +31,6 @@ class JournalForm extends Component {
   }
 
   render() {
-    console.log(this.props);
     const { handleSubmit } = this.props;
 
     return (
