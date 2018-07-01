@@ -2,7 +2,7 @@ import React from 'react';
 
 const EditingBadger = () => {
   return (
-    <div className="app grey">
+    <div className="app white">
       <div className="container">
         <h1 className="title">Honeybadger Editing Services</h1>
         <div className="row">

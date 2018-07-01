@@ -1,4 +1,5 @@
 import React from 'react';
+import Plany from './Plany';
 import OnPar from './OnPar';
 import EditingBadger from './EditingBadger';
 import ArtGallery from './ArtGallery';
@@ -10,6 +11,7 @@ import Contact from './Contact';
 const Portfolio = () => {
   return (
     <div>
+      <Plany />
       <OnPar />
       <EditingBadger />
       <AuthorWebpage />

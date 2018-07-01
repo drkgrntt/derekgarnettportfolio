@@ -2,7 +2,7 @@ import React from 'react';
 
 const AuthorWebpage = () => {
   return (
-    <div className="app white">
+    <div className="app grey">
       <div className="container">
         <h1 className="title">Author Webpage</h1>
         <div className="row">

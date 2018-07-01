@@ -8,6 +8,8 @@ import Journal from './journal/Journal';
 import ShowJournal from './journal/ShowJournal';
 import ToDo from './ToDoList/ToDo';
 import Playground from './playground/Playground';
+import Donate from './Donate';
+import Music from './Music';
 
 class App extends Component {
   componentWillMount() {
@@ -36,6 +38,8 @@ class App extends Component {
             <Route exact path="/journal" component={Journal} />
             <Route exact path="/journal/:uid" component={ShowJournal} />
             <Route exact path="/playground" component={Playground} />
+            <Route exact path="/donate" component={Donate} />
+            <Route exact path="/music" component={Music} />
           </div>
         </div>
       </BrowserRouter>

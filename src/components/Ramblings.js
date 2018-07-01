@@ -2,7 +2,7 @@ import React from 'react';
 
 const Ramblings = () => {
   return (
-    <div className="app white">
+    <div className="app grey">
       <div className="container">
         <h1 className="title">Ramblings</h1>
         <div className="row">
